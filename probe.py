@@ -8,8 +8,14 @@ def greet(name: str) -> str:
     return f"Hello from {cleaned}"
 
 
+def count_letters(name: str) -> int:
+    return len(name.strip())
+
+
 def main() -> None:
-    print(greet("paridhisehgal"))
+    who = "paridhisehgal"
+    print(greet(who))
+    print(f"letters: {count_letters(who)}")
 
 
 if __name__ == "__main__":
